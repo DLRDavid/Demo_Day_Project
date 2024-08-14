@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Day Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="headingBackground">
+        <img id="headingBackgroundImage" src="images/financebackground.jpg">
+    </div>
+
+    <div class="headingSection">
+        <div id="websiteName">CENTSABLE</div>
+        <div id="websiteDescription">YOUR MOST RELIABLE BUDGET PLANNER APP</div>
+    </div>
+
+    <div id="appBackground">
+        <img id="backgroundImage" src="images/financeappbackground.jpg">
+    </div>
+
+    <div id="graySquareBackground">
+        <img id="graySquareBackgroundImage" src="images/graysquarebackground.png">
+    </div>
+    
+
+    <div class="main_container">
+        <h1 id="calculatorHeading">CALCULATOR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+
+        <form class="form_container" id="budget_form"><br><br><br><br><br>
+            <div class="adlib">
+                <label for="salary_input">Total Income:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="number" id="salary_input" placeholder="Enter total income" /><br><br><br><br>
+            </div>
+            <div>
+                <label for="rent_mortgage_input">Rent/Mortgage:&nbsp;&nbsp;&nbsp;</label>
+                <input type="number" id="rent_mortgage_input" placeholder="Enter cost of rent or mortgage" /><br><br>
+            </div>
+            <div>
+                <label for="waterBill_input">Water Bill:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="number" id="waterBill_input" placeholder="Enter cost of water bill(s)" /><br><br>
+            </div>
+            <div>
+                <label for="electricityBill_input">Electricity Bill:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="number" id="electricityBill_input" placeholder="Enter cost of electricity bill(s)" /><br><br>
+            </div>
+            <div>
+                <label for="gasBill_input">Gas Bill:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="number" id="gasBill_input" placeholder="Enter cost of gas bill(s)" /><br><br>
+            </div>
+            <div>
+                <label for="phoneBill_input">Phone Bill:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="number" id="phoneBill_input" placeholder="Enter cost of phone bill(s)" /><br><br>
+            </div>
+            <div>
+                <label for="OtherBill_input">Other Bills:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="number" id="OtherBill_input" placeholder="Enter cost of other bill(s)" /><br><br><br>
+            </div>
+            <button id="submit_btn" type="button">Calculate</button>
+        </form>
+
+        <div class="bar-graph">
+            <div class="bar" id="salary-bar"></div> 
+            <div class="bar" id="rentmortgage-bar"></div>
+            <div class="bar" id="waterBill-bar"></div>
+            <div class="bar" id="electricityBill-bar"></div>
+            <div class="bar" id="gasBill-bar"></div>
+            <div class="bar" id="phoneBill-bar"></div>
+            <div class="bar" id="OtherBill-bar"></div>
+
+            <h1 id="remaining_display"></h1>
+
+        </div>
+
+        <div class="budget-boxes">
+            <div class="box" id="wants-box">Maximum recommended amount to spend: $0</div>
+            <div class="box" id="savings-box">Minimum recommended amount to save: $0</div>
+        </div>
+
+    </div>
+
+    <div id="recommendedSection">
+        <div id="recommendedSectionBackground">
+            <img id="recommendedSectionBackgroundImage" src="images/grayrectangleimage.png">
+        </div>
+        
+        <div id="recommendedHeading">RECOMMENDED PRODUCTS FINDER</div>
+
+
+                <div class="search-container">
+                    <h2>Search for Products on Amazon Based on Your Budget</h2>
+                    <form id="searchForm"><br><br><br>
+                        <label for="keyword"></label>
+                        <input type="text" id="keyword" name="keyword" placeholder="Search for products" required><br><br><br>
+
+                        <button type="submit" id="searchButton">Search</button>
+                    </form>
+                </div>
+
+    </div>
+
+
+
+    <div class="aboutUsSection">
+        <div id="aboutUsHeading">About&nbsp;Us</div>
+        <div id="aboutUsDescription">Centsable is an app that is designed to help people budget and save their money. We'll take your expenses and subtract it from your total income, and then calculate a recommended maximum amount to spend and a recommended minimum amount to save! Why us, you may ask? We're different from other budget planner apps. We can help you search Amazon for any product with a price under our recommended maximum amount to spend.<br><br>We were founded on August 9, 2024 by a group of four young men aspiring to be software engineers.</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
